@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Rodríguez | Diseño Web</title>
+    <link rel="shortcut icon" href="img/logodef.png" type="image/x-icon">
+
+    <!-- Enlace a Google Fonts para una tipografía moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Enlace a FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Enlace a tu archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header>
+        <div class="logo">MR <span>Digital</span></div>
+        <!-- Botón de Hamburguesa (3 barritas) -->
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#conocenos">Conócenos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Dale a tu negocio una presencia en línea</h1>
+            <p>Transformamos tus ideas en experiencias digitales modernas que impulsan tu negocio.</p>
+            <a href="#contacto" class="btn-primary">Cotiza tu proyecto</a>
+        </div>
+    </section>
+
+    <!-- Sección Conócenos -->
+    <section id="conocenos" class="seccion-clara">
+        <div class="container">
+            <h2>Conócenos</h2>
+            <div class="content-text">
+                <p>Hola, soy Miguel Rodríguez. Fundé este estudio con la visión de ayudar a empresas y emprendedores a tener una presencia digital sólida. Combinamos estética moderna con las mejores prácticas de ingeniería y desarrollo para crear sitios web rápidos, seguros y atractivos.</p>
+                <p>Nuestra misión es hacer que la tecnología trabaje a tu favor, ofreciendo soluciones a medida que realmente conecten con tu audiencia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="seccion-oscura">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="grid-servicios">
+                <div class="card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Desarrollo Web</h3>
+                    <p>Sitios web corporativos, landing pages y tiendas online a medida.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h3>Diseño Responsivo</h3>
+                    <p>Tu página se verá increíble en cualquier dispositivo, desde PC hasta smartphones.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Soporte Técnico Especializado</h3>
+                    <p>Instalación de software, mantenimiento y optimización para que tu sitio nunca falle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Trabajos -->
+    <section id="trabajos" class="seccion-clara">
+        <div class="container">
+            <h2>Nuestros Trabajos</h2>
+            <p class="subtitle">Un vistazo a nuestros proyectos más recientes.</p>
+            <div class="grid-trabajos">
+                <!-- Aquí agregarás tus trabajos en el futuro -->
+                <div class="trabajo-placeholder">
+                    <span>Proyecto 1 (Próximamente)</span>
+                </div>
+                <div class="trabajo-placeholder">
+                    <span>Proyecto 2 (Próximamente)</span>
+                </div>
+                <div class="trabajo-placeholder">
+                    <span>Proyecto 3 (Próximamente)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="seccion-oscura">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <p class="subtitle">¿Listo para empezar? Envíanos un mensaje.</p>
+            
+            <!-- FORMULARIO ACTUALIZADO MÁS SENCILLO (MAILTO) -->
+            <!-- Solo pon tu correo donde dice TUCORREO@GMAIL.COM -->
+            <form action="https://formspree.io/f/mrejqzpv" method="POST" class="formulario">
+                <!-- Configuración oculta para FormSubmit -->
+                <input type="hidden" name="_subject" value="¡Nuevo mensaje de tu sitio web!">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Tu Nombre" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                </div>
+                <div class="input-group">
+                    <textarea name="message" rows="5" placeholder="Cuéntanos sobre tu proyecto" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Miguel Rodríguez | Diseño Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Burbuja de WhatsApp -->
+    <!-- AQUÍ PONES TU NÚMERO DESPUÉS DEL 52 -->
+    <a href="https://wa.me/12323334?text=Hola,%20me%20interesa%20un%20diseño%20web" class="whatsapp-burbuja" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Script para hacer funcionar las 3 barritas -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Ocultar menú al dar clic en un enlace (para móviles)
+        document.querySelectorAll('#nav-menu li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
